@@ -57,7 +57,7 @@ header nav a[href="index.html"] {
 /* hero section for project 1 */
 section.project-hero {
   margin: 2.5rem 0;
-  padding: 2rem 0;
+  padding: 4;
   background-color: #c33770;
   display: inline-block;
   vertical-align: top;
