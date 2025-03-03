@@ -12,6 +12,13 @@ header nav {
   margin-top: 3rem;
 }
 
+/* Make all images responsive */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .about-me {
   color: #c33770;
 }
@@ -24,8 +31,38 @@ header nav a {
   font-weight: 500;
 }
 
+.bio-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  border: 4px dotted rgb(69, 52, 8);
+  padding: 1rem;
+}
+
 .image-of-me {
   border-radius: 3rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box2 {
+  border: 1px solid hotpink;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  background: lightblue;
+  padding: 1rem;
+  width: 80%;
 }
 
 header nav a[href="index.html"] {
