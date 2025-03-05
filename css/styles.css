@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 body {
   background-color: #fbf4ea;
   font-family: "Poppins", Arial, sans-serif;
@@ -36,7 +38,6 @@ header nav a {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-  border: 4px dotted rgb(69, 52, 8);
   padding: 1rem;
 }
 
@@ -45,11 +46,11 @@ header nav a {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
+
 .box2 {
-  border: 1px solid hotpink;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -60,9 +61,37 @@ header nav a {
 .bio {
   display: flex;
   flex-direction: column;
-  background: lightblue;
   padding: 1rem;
   width: 80%;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.challenge-outcome-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.homepage-desktop {
+  width: 80%;
+}
+
+.homepage-mobile {
+  width: 20%;
+}
+.challenge,
+.outcome {
+  width: 100%;
+  padding: 1rem;
 }
 
 header nav a[href="index.html"] {
@@ -94,7 +123,7 @@ header nav a[href="index.html"] {
 /* hero section for project 1 */
 section.project-hero {
   margin: 2.5rem 0;
-  padding: 4;
+  padding: 4rem;
   background-color: #c33770;
   display: inline-block;
   vertical-align: top;
@@ -147,6 +176,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 h3 {
@@ -156,6 +186,11 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.project-description {
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 
 .special-font {
@@ -186,13 +221,33 @@ footer {
 }
 
 .hero-area {
-  color: #c33770;
+  color: #c36f37;
   padding: 3rem;
 }
 
 /*----------- media Queries -----------*/
-@media screen and (max-width: 69em) {
-  main {
-    max-width: 85vw;
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .image-wrapper {
+    flex-direction: row;
   }
+
+  .challenge,
+  .outcome {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .challenge-outcome-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
