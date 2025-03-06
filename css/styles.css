@@ -181,7 +181,7 @@ section.project-hero {
 }
 
 .project-description {
-  border-top: 1px solid black;
+  border-top: 1px #c33770;
   margin-top: 1rem;
   padding-top: 0.725rem;
   flex: 1;
