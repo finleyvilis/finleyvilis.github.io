@@ -54,7 +54,6 @@ header nav a {
   flex-direction: column;
   min-height: 100vh;
   padding: 1rem;
-  background: orangered;
 }
 
 .image-of-me {
@@ -64,7 +63,6 @@ header nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: hotpink;
 }
 
 .box2 {
@@ -73,7 +71,6 @@ header nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: greenyellow;
 }
 
 .bio {
@@ -242,11 +239,10 @@ footer {
 }
 
 .hero-area {
-  color: #c36f37;
+  color: #c33770;
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  background: lightblue;
 }
 
 .hero-tagline {
