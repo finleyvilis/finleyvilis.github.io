@@ -1,10 +1,25 @@
 @import url(reset.css);
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #fbf4ea;
   font-family: "Poppins", Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.circle-bullet {
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 /* navigation */
@@ -36,26 +51,29 @@ header nav a {
 .bio-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-height: 100vh;
   padding: 1rem;
+  background: orangered;
 }
 
 .image-of-me {
   border-radius: 3rem;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.box2 {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: hotpink;
+}
+
+.box2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: greenyellow;
 }
 
 .bio {
@@ -73,7 +91,7 @@ header nav a {
   padding: 1rem;
 }
 
-.challenge-outcome-wrapper {
+.project-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -88,8 +106,8 @@ header nav a {
 .homepage-mobile {
   width: 20%;
 }
-.challenge,
-.outcome {
+.project-details-1,
+.project-details-2 {
   width: 100%;
   padding: 1rem;
 }
@@ -145,6 +163,8 @@ section.project-hero {
 
 /* project cards */
 .project-list {
+  display: flex;
+  flex-direction: row;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -156,17 +176,18 @@ section.project-hero {
   padding: 1.25rem;
   margin: 1.25rem;
   border-radius: 1rem;
-  width: 25rem;
-  height: 18.75rem;
-  display: inline-block;
-  vertical-align: top;
+  width: 50%;
+  min-height: 50vh;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
-/* images cards */
-.project-card img {
-  width: 130px;
-  height: 130px;
+.project-description {
+  border-top: 1px solid black;
+  margin-top: 1rem;
+  padding-top: 0.725rem;
+  flex: 1;
 }
 
 /*  text styles */
@@ -223,6 +244,18 @@ footer {
 .hero-area {
   color: #c36f37;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  background: lightblue;
+}
+
+.hero-tagline {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 /*----------- media Queries -----------*/
@@ -233,14 +266,26 @@ footer {
     flex-direction: row;
   }
 
-  .challenge,
-  .outcome {
+  .project-details-1,
+  .project-details-2 {
     width: 50%;
     padding: 1rem;
   }
 
-  .challenge-outcome-wrapper {
+  .project-wrapper {
     flex-direction: row;
+  }
+
+  .bio-wrapper {
+    flex-direction: row;
+  }
+
+  .image-of-me {
+    width: 50%;
+  }
+
+  .box2 {
+    width: 50%;
   }
 }
 
