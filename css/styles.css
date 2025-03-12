@@ -16,10 +16,46 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Make all images responsive */
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography Styles */
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-details-list {
+  margin-bottom: 1rem;
+}
 .circle-bullet {
   list-style-type: circle;
   list-style-position: inside;
+  margin-bottom: 0.5rem;
 }
 
 /* navigation */
@@ -27,13 +63,6 @@ header nav {
   text-align: center;
   padding: 1.25rem;
   margin-top: 3rem;
-}
-
-/* Make all images responsive */
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .about-me {
@@ -134,6 +163,7 @@ header nav a {
   .project-details {
   width: 100%;
   padding: 1rem;
+  background: lightblue;
 }
 
 header nav a[href="index.html"] {
@@ -204,7 +234,7 @@ section.project-hero {
   padding: 1.25rem;
   margin: 1.25rem;
   border-radius: 1rem;
-  width: 50%;
+  width: 100%;
   min-height: 50vh;
   text-align: left;
   display: flex;
@@ -217,35 +247,17 @@ section.project-hero {
   padding-top: 0.725rem;
   flex: 1;
 }
+
+.project-case-study-description {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
 .creative-process {
   font-size: 1.4rem;
   line-height: 2rem;
   display: flex;
   flex-direction: column;
-}
-
-/*  text styles */
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.project-description {
-  font-size: 1.4rem;
-  line-height: 1.4;
 }
 
 .special-font {
@@ -260,11 +272,6 @@ p {
 main {
   width: 90%;
   margin: 0 auto;
-}
-
-/* image styles */
-img {
-  max-width: 100%;
 }
 
 footer {
@@ -308,7 +315,12 @@ footer {
   .image-wrapper {
     flex-direction: row;
   }
-
+  h1 {
+    font-size: 4rem;
+  }
+  .project-card {
+    width: 50%;
+  }
   .project-details-1,
   .project-details-2
     .project-3
