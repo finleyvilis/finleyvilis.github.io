@@ -1,5 +1,5 @@
 @import url(reset.css);
-
+/* <!-- Knowledge source: James Neufeld , personal communication, March 10, 2025 -->*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -89,6 +89,7 @@ main {
 }
 
 /*  about me content */
+/* <!-- Knowledge source: James Neufeld , personal communication, March 10, 2025 -->*/
 .about-me {
   color: #c33770;
 }
@@ -292,6 +293,7 @@ section.project-hero {
   color: #c33770;
 }
 
+/* footer */
 footer {
   margin: 2.5rem 0;
   padding: 2rem 0;
@@ -322,7 +324,7 @@ footer {
 }
 
 /*----------- media Queries -----------*/
-
+/* <!-- Knowledge source: James Neufeld , personal communication, March 10, 2025 -->*/
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .image-wrapper {
