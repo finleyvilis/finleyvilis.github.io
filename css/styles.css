@@ -1,6 +1,7 @@
 @import url(reset.css);
-/* <!-- Knowledge source: James Neufeld , personal communication, March 10, 2025 -->*/
 /* apply a natural box layout model to all elements, but allowing components to change */
+
+/* <!-- Knowledge source: James Neufeld , personal communication, March 8, 2025 -->*/
 html {
   box-sizing: border-box;
 }
@@ -242,6 +243,7 @@ section.project-hero {
   font-size: 1.4rem;
   line-height: 1.4;
   margin-bottom: 1rem;
+  padding-bottom:14rem;
 }
 
 /* project cards */
